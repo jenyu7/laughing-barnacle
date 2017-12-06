@@ -29,7 +29,12 @@ value += " "+ gcd(200,5); //-> 5
 value += " "+ gcd(4, 0); //-> 4
 console.log(value);
 
+var names = ["Elmo","Big Bird", "Oscar", "Cookie Monster"];
 var randomStudent = function(list){
-    
+    var len = list.length;
+    return list[Math.floor(len*Math.random())];
 }
 
+var value = "" +  randomStudent(names); //-> 6
+value += " " + randomStudent(names); //-> 6
+console.log(value);
